@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&family=Lugrasimo&family=Pridi:wght@400;600;700&family=Roboto+Slab:wght@500&family=Rubik+Dirt&family=Rubik+Wet+Paint&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+  
+}
+.boxAll {
+  margin: 20px;
+  background-color: #1d225b;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto; 
+  margin-top: 20px;
+}
+
+.boxAll > .lineAll {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  background-color: #1d225b;
+  
+}
+
+.lineAnimationBotton {
+  width: 100%;
+  height: 1px;
+  
+  background: linear-gradient(
+    90deg,
+    rgba(0, 65, 255, 1) 25%,
+    rgb(162, 0, 255) 50%, 
+    rgba(0, 52, 255, 1) 100%
+  );
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.8);
+  animation: linebackground 5s linear infinite;
+}
+@keyframes linebackground {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 600px;
+  }
+}
+
+.boxAll > .lineAll > .linehead {
+  text-align: center;
+  position: absolute;
+  display: flex;
+  padding-bottom: 25px;
+  
+  
+  font-family: "Roboto Slab";
+  color: #11b1f8;
+ 
+}
+.boxAll > .lineAll > .linehead > .linetitle {
+  color: white;
+  padding-left: 5px;
+}
+
+.lineCountH1 {
+  color: rgb(255, 255, 255);
+}
+
+.boxAll > .lineAll > .Line {
+  margin-top: 10px;
+  height:  9px;
+
+  overflow: hidden;
+}
+.boxAll > .lineAll > .Line > .paintLine {
+  height: 20px;
+}
